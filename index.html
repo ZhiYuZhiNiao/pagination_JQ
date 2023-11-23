@@ -1,32 +1,37 @@
+<!--
+ * @Author: 陈天敏 18082020969@163.com
+ * @Date: 2023-11-23 19:22:57
+ * @LastEditors: 陈天敏 18082020969@163.com
+ * @LastEditTime: 2023-11-23 23:11:47
+ * @FilePath: \pagination_JQ\index.html
+ * @Description: 描述
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./pagination.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div class="test">
-    <div class="pagination">
-      <div class="left-arrow block">
-        <svg t="1700733833606" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5977" width="16" height="16"><path d="M719.2 912.6c14.2-14.2 14.2-37.2 0-51.4L371.7 513.8c-2.8-2.9-2.8-7.5 0-10.3L719.2 156c14.2-14.2 14.2-37.2 0-51.4-14.2-14.2-37.2-14.2-51.4 0L320.3 452c-15.6 15.6-23.4 36-23.4 56.5s7.8 41 23.4 56.5l347.4 347.4c14.3 14.3 37.3 14.3 51.5 0.2z" p-id="5978"></path></svg>
-      </div>
-      <div class="pagination-item-box">
-        <div class="pagination-item block">1</div>
-        <div class="pagination-item block">2</div>
-        <div class="pagination-item block">3</div>
-        <div class="pagination-item block">4</div>
-        <div class="pagination-item block">5</div>
-      </div>
-      <div class="right-arrow block">
-        <svg t="1700733799598" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5000" width="16" height="16"><path d="M307.6 104.6c-14.2 14.2-14.2 37.2 0 51.4L655 503.4c2.8 2.9 2.8 7.5 0 10.3L307.6 861.2c-14.2 14.2-14.2 37.2 0 51.4 14.2 14.2 37.2 14.2 51.4 0l347.4-347.4c15.6-15.6 23.4-36 23.4-56.5s-7.8-41-23.4-56.5L359 104.6c-14.2-14.2-37.2-14.2-51.4 0z" p-id="5001"></path></svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./pagination.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="table">
+      <div class="list-box">
+        <div class="item"></div>
       </div>
     </div>
-  </div>
-
-</body>
+    <div class="test">
+      <div class="pagination" id="pagination">
+        <!-- <div class="pagination-item-box"></div> -->
+      </div>
+    </div>
+  </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new Pagination({ pageTotal: 25 })
+    })
+  </script>
 </html>
