@@ -1,0 +1,28 @@
+.test {
+  margin: 50px auto;
+}
+.pagination {
+  margin: 30px 0;
+  display: flex;
+  color: #7b7b7b;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-item-box {
+  display: flex;
+}
+
+.block {
+  box-sizing: border-box;
+  padding: 6px 12px;
+	background-color: #eff1f5;
+	border-radius: 4px;
+	border: solid 1px #d2d2d2;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.block:hover {
+  color: #3f43e0;
+}
